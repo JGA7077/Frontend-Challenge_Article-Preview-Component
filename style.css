@@ -9,41 +9,77 @@
     font-size: 13px;
 }
 
-main {
-    background-color: #d5d9df;
+body {
+    background-color: #d4d9df;
 }
 
 /*-------------------Card Area---------------------*/
 
 .card {
     display: flex;
-    width: 40vw;
+    width: 50vw;
     margin: 25vh auto;
     background-color: #fff;
-    border: 1px solid red;
+    border-radius: 15px;
+    box-shadow: -15px 15px 10px #babaca;
 }
 
 .card-image {
     width: 300px;
     height: 300px;
+    border-radius: 15px 0 0 15px;
 }
 
 .card-text {
     display: flex;
     flex-direction: column;
-    padding: 45px;
+    padding: 35px 45px;
 }
 
 .card-title {
-    font-size: 2em;
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    color: hsl(218, 18%, 24%);
+}
+
+.card-description {
+    font-size: 0.85em;
+    line-height: 20px;
+    color: hsl(217, 19%, 35%);
 }
 
 .card-user {
     display: flex;
+    justify-content: space-between;
+    margin: 0 45px 30px 45px;
+}
+
+.user-infos {
+    display: flex;
+    color: hsl(214, 17%, 51%);
+}
+
+.user-name {
+    color: hsl(218, 18%, 24%);
 }
 
 .avatar {
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-details {
+    margin-top: 3px;
+}
+
+.share {
+    width: 18px;
+    height: 18px;
+    background-color:hsl(210, 46%, 95%);
+    padding: 5px;
+    border-radius: 100%;
 }
 
 /*--------------------Standard Footer--------------*/
@@ -52,3 +88,19 @@ main {
 .attribution a { color: hsl(228, 45%, 44%); }
 
 /*------------------Responsive Area---------------*/
+
+/* @media (max-width: 810px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .aside {
+        width: 300px;
+
+    }
+} */
